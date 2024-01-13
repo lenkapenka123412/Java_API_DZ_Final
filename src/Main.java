@@ -33,7 +33,7 @@ public class Main {
                 System.out.print("Введите цвет: ");
                 filters.put("Color", scanner.next());
                 break;
-            // Добавьте дополнительные критерии по необходимости
+            // Дополнительные критерии по необходимости
             default:
                 System.out.println("Неверный выбор.");
                 return;

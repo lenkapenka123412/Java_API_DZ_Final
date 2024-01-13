@@ -5,11 +5,10 @@ public class LaptopStore {
 
     public LaptopStore() {
         laptops = new HashSet<>();
-        // Добавьте ноутбуки в множество
+        // Добавляем ноутбуки в множество
         laptops.add(new Laptop("HP", 8, 512, "Windows", "Silver"));
         laptops.add(new Laptop("Dell", 16, 1024, "Linux", "Black"));
         laptops.add(new Laptop("Lenovo", 12, 256, "Windows", "Grey"));
-        // Добавьте еще ноутбуки по необходимости
     }
 
     public void filterLaptops(Map<String, Object> filters) {
@@ -35,7 +34,7 @@ public class LaptopStore {
                     case "Color":
                         meetsCriteria &= laptop.getColor().equalsIgnoreCase((String) filterValue);
                         break;
-                    // Добавьте дополнительные критерии по необходимости
+                    // Ещё критерии по необходимости
                 }
             }
 
